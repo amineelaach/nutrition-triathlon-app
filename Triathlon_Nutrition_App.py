@@ -1,13 +1,3 @@
-import subprocess
-import sys
-
-# Installe matplotlib automatiquement s'il n'est pas encore là
-try:
-    import matplotlib.pyplot as plt
-except ModuleNotFoundError:
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "matplotlib"])
-    import matplotlib.pyplot as plt
-
 import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
